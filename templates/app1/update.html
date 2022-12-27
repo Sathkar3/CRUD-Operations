@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<center>
+	
+<h2>Update Employee Data</h2>
+
+<form method="POST">
+	 {%csrf_token%}
+	
+EMP NO: <input type="text" name="Eno" value="{{employee.Eno}}"><br>
+EMP NAME: <input type="text" name="Ename" value="{{employee.Ename}}"><br>
+EMP SAL: <input type="text" name="Esal" value="{{employee.Esal}}"><br>
+EMP ADDR: <input type="text" name="Eadd" value="{{employee.Eadd}}"><br>
+<button>Update</button>
+
+
+
+</form>
+
+</center>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+
+ </head>
+ <body>
+
+ <center>
+ 	<h2>Add Employee </h2>
+
+ <form method="POST">
+
+ 	 {% csrf_token %}
+
+ 	 {{form.as_p}}
+ 	
+       <input type="Submit" value="Insert Record">
+
+ </form>
+ 
+ </center>
+ 
+ </body>
+ </html>

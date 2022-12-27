@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<center>
+	<h2>Employee Information</h2>
+
+<table border="3">
+	<thead>
+		<th>Emp No</th>
+		<th>Emp Name</th>
+		<th>Emp Sal</th>
+		<th>Emp Add</th>
+		<th>Emp Actions</th>
+
+	</thead>
+
+  {% for i in e %}
+
+<tr>
+	<td>{{i.Eno}}</td>
+	<td>{{i.Ename}}</td>
+	<td>{{i.Esal}}</td>
+	<td>{{i.Eadd}}</td>
+	<td><a href="/update/{{i.id}}"><button>Update</button></a><a href="/delete/{{i.id}}"><button>Delete</button></a></td>
+
+</tr>
+
+ {% endfor %}
+	
+</table>
+
+<a href="/insert"><button>Add Employee</button></a>
+
+</center>
+
+</body>
+</html>
